@@ -1,0 +1,36 @@
+* {
+  /*A propriedade selecionada em border-box faz com o width seja respeitado diminuindo o conteúdo, ou seja se houver um padding, ele não vai somar padding+width e sim diminuir o espaço do conteúdo*/
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+ul {
+  /*A propriedade abaixo retira qualquer estilo dos itens da lista*/
+  list-style: none;
+}
+
+a {
+  /*A propriedade abaixo retira o sublinhado automatico da tag de hiperlink (a)*/
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  /*A propriedade max-width faz com que a imagem tenha o máximo do tamanho dela, diferente do width que iria fazer a imagem aumentar conforme o viewport aumenta*/
+  max-width: 100%;
+}
