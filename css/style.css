@@ -65,6 +65,7 @@ img {
   color: white;
   max-width: 960px;
   padding: 15px 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -78,19 +79,66 @@ img {
 .menu-logo a {
   font-size: 2.25em;
   font-weight: bold;
+  margin: 0 10px;
 }
 
-.menu nav ul {
+.menu-nav ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.menu nav a {
+.menu-nav a {
   font-size: 1.25em;
   display: block;
   padding: 10px;
 }
 
-.menu nav a:hover {
+.menu-nav a:hover {
   color: #122ab2;
+}
+
+/*Introdução*/
+
+.introducao {
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  /*É bom usar o padding ao invés da margin pq o padding é interno, enquanto a margin é externo, logo se o background fosse colorido iria ficar com uma distancia em branco*/
+  padding: 60px 10px;
+}
+
+/*Sobre*/
+
+.sobre {
+  border-top: 2px solid #122ab2;
+  border-bottom: 2px solid #122ab2;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  color: #7c7c7c;
+}
+
+.sobre-img {
+  margin: 0 10px;
+  flex: 1 1 160px;
+  margin-bottom: 1em;
 }
